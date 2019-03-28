@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>demohvac.qml</file>
+        <file>HeatDegree.qml</file>
+        <file>api/Binding.qml</file>
+        <file>api/MessageId.js</file>
+    </qresource>
+</RCC>
