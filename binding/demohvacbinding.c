@@ -40,7 +40,7 @@
 #include <afb/afb-binding.h>
 
 #define CAN_DEV "vcan"
-#define SER_DEV "/dev/serial0"
+#define SER_DEV "/dev/ttyS0"
 
 static const struct afb_binding_interface *interface;
 
@@ -63,7 +63,7 @@ static int init_serial(void)
 {	
 	int fd;
 	
-	fd = open("/dev/serial0", O_RDWR | O_NOCTTY | O_NDELAY);		//Open in non blocking read/write mode
+	fd = open("/dev/ttyS0", O_RDWR | O_NOCTTY | O_NDELAY);		//Open in non blocking read/write mode
 	if (fd == -1)
 	{
 		//ERROR - CAN'T OPEN SERIAL PORT
